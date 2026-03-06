@@ -5,20 +5,20 @@ const testimonials = [
   {
     quote:
       "AquaSense has completely transformed how I manage my farm. The real-time alerts have saved my fish stock multiple times.",
-    author: "Maria Chen",
-    role: "Urban Farmer, GreenGrow NYC",
+    author: "Eileen",
+    role: "Urban Farmer, GreenGrow",
     avatar: "/professional-woman-farmer-portrait.jpg",
   },
+  // {
+  //   quote:
+  //     "It's like having an expert aquaponics consultant available 24/7.",
+  //   author: "James Mathew",
+  //   role: "Agricultural Researcher",
+  //   avatar: "/professional-man-scientist-portrait.jpg",
+  // },
   {
-    quote:
-      "The AI recommendations are incredibly accurate. It's like having an expert aquaponics consultant available 24/7.",
-    author: "James Okonkwo",
-    role: "Agricultural Researcher, MIT",
-    avatar: "/professional-man-scientist-portrait.jpg",
-  },
-  {
-    quote: "We've increased our yield by 40% since implementing AquaSense across our commercial operation.",
-    author: "Sarah Mitchell",
+    quote: "We've increased our yield by 20% since implementing AquaSense across our commercial operation.",
+    author: "Anu Menon",
     role: "Operations Director, AquaFarms Inc",
     avatar: "/professional-woman-portrait.png",
   },

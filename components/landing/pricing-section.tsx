@@ -6,21 +6,21 @@ import { cn } from "@/lib/utils"
 const plans = [
   {
     name: "Hobbyist",
-    price: "$19",
+    price: "₹50",
     period: "/month",
     description: "Perfect for home aquaponic setups",
-    features: ["Up to 5 sensors", "1 system", "7-day data history", "Email alerts", "Basic recommendations"],
+    features: ["Up to 4 sensors", "1 system", "7-day data history", "Email alerts", "Basic recommendations"],
     cta: "Start Free Trial",
     popular: false,
   },
   {
     name: "Professional",
-    price: "$49",
+    price: "₹250",
     period: "/month",
     description: "For serious growers and small farms",
     features: [
-      "Up to 25 sensors",
-      "5 systems",
+      "Up to 15 sensors",
+      "3 systems",
       "90-day data history",
       "Email, SMS & push alerts",
       "AI recommendations",

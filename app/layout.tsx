@@ -8,23 +8,23 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" })
 
 export const metadata: Metadata = {
-  title: "AquaSense IoT - Smart Aquaponic Farm Management",
+  title: "AquaSense IoT - Aquaponic Farm Management",
   description:
     "Intelligent IoT monitoring and management platform for aquaponic farming. Transform sensor data into actionable insights.",
   generator: "v0.app",
   icons: {
     icon: [
+      // {
+      //   url: "/leaf-icon.png",
+      //   media: "(prefers-color-scheme: light)",
+      // },
+      // {
+      //   url: "/leaf-icon.png",
+      //   media: "(prefers-color-scheme: dark)",
+      // },
       {
-        url: "/icon-light-32x32.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/icon-dark-32x32.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
+        url: "/icons8-hydroponics.png",
+        type: "image/png",
       },
     ],
     apple: "/apple-icon.png",

@@ -58,9 +58,9 @@ export function HeroSection() {
             </div>
             <div className="aspect-video overflow-hidden rounded-lg bg-background">
               <img
-                src="/aquaponic-farm-dashboard-with-sensor-metrics-ph-te.jpg"
+                src="/dash-img.png"
                 alt="AquaSense Dashboard Preview"
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
               />
             </div>
           </div>

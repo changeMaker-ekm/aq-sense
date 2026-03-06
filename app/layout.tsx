@@ -40,7 +40,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${outfit.variable} font-sans antialiased`}>
         {children}
-        <Analytics />
       </body>
     </html>
   )

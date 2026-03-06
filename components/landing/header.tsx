@@ -28,9 +28,9 @@ export function LandingHeader() {
           <Link href="#pricing" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
             Pricing
           </Link>
-          <Link href="/contact" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
+          {/* <Link href="/contact" className="text-sm text-muted-foreground transition-colors hover:text-foreground">
             Contact
-          </Link>
+          </Link> */}
         </div>
 
         <div className="hidden items-center gap-3 md:flex">

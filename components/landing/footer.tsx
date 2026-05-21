@@ -2,29 +2,29 @@ import Link from "next/link"
 import { Droplets, Github, Linkedin, Twitter } from "lucide-react"
 
 const footerLinks = {
-  Product: [
-    { name: "Features", href: "#features" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "API", href: "/api" },
-    { name: "Integrations", href: "/integrations" },
-  ],
-  Company: [
-    { name: "About", href: "/about" },
-    { name: "Blog", href: "/blog" },
-    { name: "Careers", href: "/careers" },
-    { name: "Contact", href: "/contact" },
-  ],
-  Resources: [
-    { name: "Documentation", href: "/docs" },
-    { name: "Help Center", href: "/help" },
-    { name: "Community", href: "/community" },
-    { name: "Status", href: "/status" },
-  ],
-  Legal: [
-    { name: "Privacy", href: "/privacy" },
-    { name: "Terms", href: "/terms" },
-    { name: "Security", href: "/security" },
-  ],
+  // Product: [
+  //   { name: "Features", href: "#features" },
+  //   { name: "Pricing", href: "#pricing" },
+  //   // { name: "API", href: "/api" },
+  //   { name: "Integrations", href: "/integrations" },
+  // ],
+  // Company: [
+  //   // { name: "About", href: "/about" },
+  //   // { name: "Blog", href: "/blog" },
+  //   // { name: "Careers", href: "/careers" },
+  //   { name: "Contact", href: "/contact" },
+  // ],
+  // Resources: [
+  //   { name: "Documentation", href: "/docs" },
+  //   { name: "Help Center", href: "/help" },
+  //   { name: "Community", href: "/community" },
+  //   { name: "Status", href: "/status" },
+  // ],
+  // Legal: [
+  //   { name: "Privacy", href: "/privacy" },
+  //   { name: "Terms", href: "/terms" },
+  //   { name: "Security", href: "/security" },
+  // ],
 }
 
 export function Footer() {
@@ -43,12 +43,12 @@ export function Footer() {
               Intelligent IoT monitoring for aquaponic farming. Transform data into healthier harvests.
             </p>
             <div className="mt-6 flex gap-4">
-              <Link href="#" className="text-muted-foreground transition-colors hover:text-foreground">
+              {/* <Link href="#" className="text-muted-foreground transition-colors hover:text-foreground">
                 <Twitter className="h-5 w-5" />
-              </Link>
-              <Link href="#" className="text-muted-foreground transition-colors hover:text-foreground">
+              </Link> */}
+              {/* <Link href="#" className="text-muted-foreground transition-colors hover:text-foreground">
                 <Github className="h-5 w-5" />
-              </Link>
+              </Link> */}
               <Link href="#" className="text-muted-foreground transition-colors hover:text-foreground">
                 <Linkedin className="h-5 w-5" />
               </Link>
@@ -59,7 +59,7 @@ export function Footer() {
             <div key={category}>
               <h3 className="mb-4 text-sm font-semibold">{category}</h3>
               <ul className="space-y-3">
-                {links.map((link) => (
+                {/* {links.map((link) => (
                   <li key={link.name}>
                     <Link
                       href={link.href}
@@ -68,13 +68,13 @@ export function Footer() {
                       {link.name}
                     </Link>
                   </li>
-                ))}
+                ))} */}
               </ul>
             </div>
           ))}
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-8 sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-border pt-8 sm:flex-row">
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} AquaSense IoT. All rights reserved.
           </p>

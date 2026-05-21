@@ -37,12 +37,12 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" asChild>
+            {/* <Button size="lg" variant="outline" asChild>
               <Link href="#demo">
                 <Play className="mr-2 h-4 w-4" />
                 Watch Demo
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
 

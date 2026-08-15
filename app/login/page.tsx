@@ -1,4 +1,6 @@
+'use client'
 import Link from "next/link"
+import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -6,6 +8,13 @@ import { Checkbox } from "@/components/ui/checkbox"
 import { Droplets } from "lucide-react"
 
 export default function LoginPage() {
+  // 1. Initialize the navigate function
+  const router = useRouter();
+
+  const handleButtonClick = () => {
+    // 2. Trigger the navigation action
+    router.push('/dashboard');
+  };
   return (
     <div className="min-h-screen flex">
       {/* Left side - Form */}
@@ -45,8 +54,8 @@ export default function LoginPage() {
               </Label>
             </div>
 
-            <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
-              Sign in
+            <Button asChild className="w-full bg-primary hover:bg-primary/90">
+              <Link href="/dashboard">Sign in</Link>
             </Button>
           </form>
 

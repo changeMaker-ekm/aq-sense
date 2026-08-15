@@ -1,64 +1,34 @@
-import { Activity, Bell, Brain, Gauge, History, Settings } from "lucide-react"
+import { Activity, Bell, Droplets, Leaf, ShieldCheck, Timer } from "lucide-react"
 
 const features = [
-  {
-    icon: Gauge,
-    title: "Real-time Monitoring",
-    description: "Track pH, dissolved oxygen, ammonia, temperature, humidity, and water levels with instant updates.",
-  },
-  {
-    icon: Bell,
-    title: "Smart Alerts",
-    description: "Multi-channel notifications via email, SMS, or voice call when parameters exceed safe thresholds.",
-  },
-  {
-    icon: Brain,
-    title: "AI Recommendations",
-    description: "Get intelligent, actionable suggestions to optimize your system based on real-time data analysis.",
-  },
-  {
-    icon: History,
-    title: "Historical Analytics",
-    description: "Visualize trends, identify patterns, and make data-driven decisions with comprehensive reports.",
-  },
-  {
-    icon: Activity,
-    title: "Multi-System Management",
-    description: "Monitor multiple farms and systems from a single dashboard with unified control.",
-  },
-  {
-    icon: Settings,
-    title: "Device Configuration",
-    description: "Easy sensor calibration, firmware updates, and device management with guided wizards.",
-  },
+  { icon: ShieldCheck, title: "Protect every crop", description: "Know when conditions drift before stress becomes visible. Early warnings help you save plants, time, and yield." },
+  { icon: Droplets, title: "Use water wisely", description: "See where water is going across beds and zones, then fine-tune irrigation with confidence instead of guesswork." },
+  { icon: Timer, title: "Save your best hours", description: "Replace repetitive checks with one clear view of what needs attention now and what can wait until tomorrow." },
+  { icon: Activity, title: "Read the whole farm", description: "Bring climate, water quality, and system health together so one change never surprises you somewhere else." },
+  { icon: Leaf, title: "Make decisions in context", description: "Turn raw sensor readings into practical recommendations that fit the crop stage and your growing plan." },
+  { icon: Bell, title: "Stay ahead from anywhere", description: "Get the right alert at the right moment, whether you are in the field, the packing shed, or away from the farm." },
 ]
 
 export function FeaturesSection() {
   return (
-    <section id="features" className="py-20 lg:py-32">
+    <section id="features" className="border-y border-border bg-secondary/30 py-20 lg:py-28">
       <div className="mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Everything you need to grow smarter</h2>
-          <p className="mt-4 text-lg text-muted-foreground">
-            Comprehensive tools to monitor, analyze, and optimize your aquaponic systems.
-          </p>
+        <div className="max-w-2xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-primary">The grower advantage</p>
+          <h2 className="mt-3 text-3xl font-bold tracking-tight text-balance sm:text-4xl">A clearer day on the farm starts with better signals.</h2>
+          <p className="mt-4 text-lg leading-relaxed text-muted-foreground">Everything you need to turn live farm data into healthier crops and steadier operations.</p>
         </div>
-
-        <div className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-14 grid gap-px overflow-hidden rounded-2xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
           {features.map((feature) => (
-            <div
-              key={feature.title}
-              className="group relative rounded-xl border border-border bg-card p-6 transition-all hover:border-primary/50 hover:bg-card/80"
-            >
-              <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
-                <feature.icon className="h-6 w-6" />
-              </div>
-              <h3 className="mb-2 text-lg font-semibold">{feature.title}</h3>
-              <p className="text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
-            </div>
+            <article key={feature.title} className="bg-card p-6 transition-colors hover:bg-background">
+              <feature.icon className="size-6 text-primary" />
+              <h3 className="mt-5 text-lg font-semibold">{feature.title}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{feature.description}</p>
+            </article>
           ))}
         </div>
       </div>
     </section>
   )
 }
+                            

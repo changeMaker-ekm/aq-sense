@@ -8,9 +8,9 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" })
 
 export const metadata: Metadata = {
-  title: "AquaSense IoT - Aquaponic Farm Management",
+  title: "AquaSense — Grow with confidence",
   description:
-    "Intelligent IoT monitoring and management platform for aquaponic farming. Transform sensor data into actionable insights.",
+    "AquaSense helps growers and farmers protect crops, reduce water waste, and make confident decisions from live farm data.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -37,7 +37,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-background">
       <body className={`${inter.variable} ${outfit.variable} font-sans antialiased`}>
         {children}
       </body>

@@ -1,29 +1,12 @@
 import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, Sprout } from "lucide-react"
+import Link from "next/link"
 
 export function CTASection() {
   return (
-    <section className="border-t border-border bg-secondary/30 py-20 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6">
-        <div className="relative overflow-hidden rounded-2xl border border-border bg-card p-8 lg:p-16">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-accent/10" />
-          <div className="relative mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">Ready to grow smarter?</h2>
-            <p className="mt-4 text-lg text-muted-foreground">
-              Join thousands of farmers using AquaSense to optimize their operations. Start your free subscription today.
-            </p>
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:justify-center">
-              <Input type="email" placeholder="Enter your email" className="h-12 bg-background sm:w-80" />
-              <Button size="lg" className="h-12 bg-primary hover:bg-primary/90">
-                Subscribe to newsletter
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
-            {/* <p className="mt-4 text-sm text-muted-foreground">14-day free trial. No credit card required.</p> */}
-          </div>
-        </div>
-      </div>
+    <section className="border-t border-border bg-secondary/30 py-20 lg:py-28">
+      <div className="mx-auto max-w-7xl px-6"><div className="relative overflow-hidden rounded-3xl bg-primary p-8 text-primary-foreground lg:p-16"><div className="relative max-w-2xl"><Sprout className="size-8" /><h2 className="mt-6 text-3xl font-bold tracking-tight text-balance sm:text-5xl">Make your next growing decision with more confidence.</h2><p className="mt-5 max-w-xl text-lg leading-relaxed text-primary-foreground/80">Join growers using AquaSense to protect crops, reduce waste, and build a calmer, more predictable operation.</p><div className="mt-8"><Button size="lg" variant="secondary" asChild><Link href="/signup">Start your free trial <ArrowRight data-icon="inline-end" /></Link></Button></div></div></div></div>
     </section>
   )
 }
+                            

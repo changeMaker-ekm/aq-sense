@@ -4,15 +4,15 @@ import { Droplets, Fish, Leaf, ThermometerSun, Waves, Zap } from "lucide-react"
 const bentoItems = [
   {
     icon: Droplets,
-    title: "pH Monitoring",
-    description: "Maintain optimal acidity levels with real-time pH tracking and automatic alerts when levels deviate.",
+    title: "Water that works",
+    description: "Keep every growing system in balance with live water quality signals and clear thresholds.",
     className: "lg:col-span-2 lg:row-span-1",
     gradient: "from-primary/20 to-transparent",
   },
   {
     icon: ThermometerSun,
-    title: "Temperature Control",
-    description: "Monitor water and air temperature to ensure ideal conditions for fish and plant growth.",
+    title: "Microclimates mapped",
+    description: "Understand the conditions shaping each bed, greenhouse, and growing zone.",
     className: "lg:col-span-1 lg:row-span-2",
     gradient: "from-accent/20 to-transparent",
   },

@@ -1,36 +1,12 @@
 import { Activity, Bell, Brain, Gauge, History, Settings } from "lucide-react"
 
 const features = [
-  {
-    icon: Gauge,
-    title: "Real-time Monitoring",
-    description: "Track pH, dissolved oxygen, ammonia, temperature, humidity, and water levels with instant updates.",
-  },
-  {
-    icon: Bell,
-    title: "Smart Alerts",
-    description: "Multi-channel notifications via email, SMS, or voice call when parameters exceed safe thresholds.",
-  },
-  {
-    icon: Brain,
-    title: "AI Recommendations",
-    description: "Get intelligent, actionable suggestions to optimize your system based on real-time data analysis.",
-  },
-  {
-    icon: History,
-    title: "Historical Analytics",
-    description: "Visualize trends, identify patterns, and make data-driven decisions with comprehensive reports.",
-  },
-  {
-    icon: Activity,
-    title: "Multi-System Management",
-    description: "Monitor multiple farms and systems from a single dashboard with unified control.",
-  },
-  {
-    icon: Settings,
-    title: "Device Configuration",
-    description: "Easy sensor calibration, firmware updates, and device management with guided wizards.",
-  },
+  { icon: Gauge, title: "Know your conditions", description: "See moisture, temperature, pH, water levels, and more in one calm, readable view." },
+  { icon: Bell, title: "Catch problems early", description: "Get a useful alert when a crop needs attention — before a small shift becomes a lost harvest." },
+  { icon: Brain, title: "Make the next decision", description: "Turn farm signals into practical recommendations you can use during the day, not after it." },
+  { icon: History, title: "Learn from every season", description: "Compare trends and growing cycles to understand what makes your operation thrive." },
+  { icon: Activity, title: "Run every site together", description: "Keep a steady pulse on multiple growing spaces without running between dashboards." },
+  { icon: Settings, title: "Set it up your way", description: "Configure sensors, thresholds, and routines around how your farm actually works." },
 ]
 
 export function FeaturesSection() {

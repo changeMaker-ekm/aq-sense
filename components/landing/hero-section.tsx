@@ -1,68 +1,37 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Play } from "lucide-react"
+import { ArrowRight, Leaf, Play } from "lucide-react"
 import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative overflow-hidden pt-32 pb-20 lg:pt-40 lg:pb-32">
-      {/* Background gradient effects */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <div className="absolute -top-40 -right-40 h-80 w-80 rounded-full bg-primary/20 blur-3xl" />
-        <div className="absolute top-1/2 -left-40 h-80 w-80 rounded-full bg-primary/10 blur-3xl" />
-      </div>
-
-      <div className="relative mx-auto max-w-7xl px-6">
-        <div className="mx-auto max-w-3xl text-center">
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/50 px-4 py-2 text-sm text-muted-foreground">
-            <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-primary" />
-            </span>
-            Real-time monitoring for aquaponic systems
-          </div>
-
-          <h1 className="text-4xl font-bold tracking-tight text-balance sm:text-5xl lg:text-6xl">
-            Smart Farming, <span className="text-primary">Healthier Harvests</span>
-          </h1>
-
-          <p className="mt-6 text-lg leading-relaxed text-muted-foreground text-pretty">
-            Transform raw sensor data into actionable agricultural insights. AquaSense helps you maintain optimal
-            growing conditions for both fish and plants while minimizing manual intervention.
+    <section className="relative overflow-hidden bg-secondary pt-28 pb-12 lg:pt-36 lg:pb-20">
+      <div className="mx-auto grid max-w-7xl items-center gap-12 px-6 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
+        <div className="max-w-xl">
+          <p className="mb-6 inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.2em] text-primary">
+            <Leaf className="size-4" /> Built for growers
           </p>
-
-          <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button size="lg" asChild className="bg-primary hover:bg-primary/90">
-              <Link href="/signup">
-                Start Free Trial
-                <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
+          <h1 className="font-serif text-5xl leading-[0.95] tracking-tight text-balance sm:text-6xl lg:text-7xl">
+            Grow with confidence, <span className="text-primary">not guesswork.</span>
+          </h1>
+          <p className="mt-7 max-w-lg text-lg leading-relaxed text-muted-foreground text-pretty">
+            AquaSense gives farmers a clear view of what is happening across every bed, tank, and crop — so you can act early and harvest more.
+          </p>
+          <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+            <Button size="lg" asChild>
+              <Link href="/signup">See your farm clearly <ArrowRight data-icon="inline-end" /></Link>
             </Button>
-            {/* <Button size="lg" variant="outline" asChild>
-              <Link href="#demo">
-                <Play className="mr-2 h-4 w-4" />
-                Watch Demo
-              </Link>
-            </Button> */}
+            <Button size="lg" variant="outline" asChild>
+              <Link href="#how-it-works"><Play data-icon="inline-start" /> How it works</Link>
+            </Button>
           </div>
+          <p className="mt-5 font-mono text-xs text-muted-foreground">For small farms, growing teams, and the people who care deeply about both.</p>
         </div>
-
-        {/* Dashboard Preview */}
-        <div className="relative mt-16 lg:mt-20">
-          <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-primary/20 via-transparent to-primary/20 blur-2xl" />
-          <div className="relative rounded-xl border border-border bg-card p-2 shadow-2xl">
-            <div className="flex items-center gap-2 border-b border-border px-4 py-3">
-              <div className="h-3 w-3 rounded-full bg-destructive/80" />
-              <div className="h-3 w-3 rounded-full bg-warning/80" />
-              <div className="h-3 w-3 rounded-full bg-success/80" />
-              <span className="ml-4 text-xs text-muted-foreground">AquaSense Dashboard</span>
-            </div>
-            <div className="aspect-video overflow-hidden rounded-lg bg-background">
-              <img
-                src="/dash-img.png"
-                alt="AquaSense Dashboard Preview"
-                className="h-full w-full object-contain"
-              />
-            </div>
+        <div className="relative min-h-[380px] overflow-hidden border border-primary/20 bg-card shadow-xl lg:min-h-[540px]">
+          <img src="/professional-woman-farmer-portrait.jpg" alt="Farmer inspecting a growing system" className="absolute inset-0 h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-gradient-to-t from-foreground/75 via-transparent to-transparent" />
+          <div className="absolute bottom-5 left-5 right-5 flex items-end justify-between gap-4 text-primary-foreground">
+            <div><p className="font-mono text-xs uppercase tracking-widest text-primary-foreground/70">Today on the farm</p><p className="mt-1 font-serif text-2xl">12 beds looking good</p></div>
+            <div className="border border-primary-foreground/30 bg-foreground/30 px-3 py-2 text-right backdrop-blur-sm"><p className="font-mono text-xs text-primary-foreground/70">Next check</p><p className="font-semibold">in 42 min</p></div>
           </div>
         </div>
       </div>
